@@ -1,22 +1,103 @@
 #indexPage {
+  @include flex($fdir:column);
+  height: 100vh;
   header {
+    width: 100%;
     padding: 1rem 0;
-    @include flex($fdir: column,$gap:.25rem);
+    @include flex($fdir: column, $gap: 0.25rem);
     border-bottom: 2px solid $end-section-border-color;
     .header-logo {
       margin: 1rem auto;
       width: 6.5rem;
     }
     nav {
-        width: 100%;
+      font-size: 1.2rem;
+      width: 100%;
       ul {
-        padding: .5rem;
+        padding: 0.5rem;
         width: 100%;
         @include flex($jcnt: space-around);
       }
     }
   }
-  @breakpoint (sm) {
+  @include breakpoint(sm) {
+    margin: auto;
     max-width: 566px;
+  }
+  main {
+    width: 100%;
+    @include flex($fdir: column, $gap: 2rem,$jcnt:flex-start);
+    flex-grow: 1;
+    padding: 1rem;
+    .description {
+      text-align: center;
+      display: none;
+      @include breakpoint(sm) {
+        @include flex($fdir: column, $jcnt: center);
+
+      }
+    }
+    .section-wrapper{
+      .section{
+        &-title{
+          color:$section-title;
+          text-align: center;
+          margin-bottom: 1rem;
+          @include breakpoint(sm){
+            text-align: right;
+          }
+        }
+        &-content{
+          .card-list{
+           @include flex($fwrap:wrap,$gap:5rem); 
+
+           
+          }
+          .card-item{
+            font-weight: 400;
+           font-size: 1.5rem;
+           width: 5rem;
+           height: 5rem;
+           @include flex;
+
+
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    .footer {
+      &-nemads,
+      &-social {
+        margin: auto;
+        max-width: 90%;
+        border-top: 2px solid $end-section-border-color;
+        padding: 1rem;
+        ul {
+          @include flex($fdir: row-reverse);
+          li {
+            @extend %transition-easy-1;
+            &:hover {
+              color: $link-hover-color;
+            }
+          }
+        }
+      }
+      &-nemads li {
+        width: 6.2rem;
+        height: 6.2rem;
+      }
+      &-social ul {
+        max-width: 70%;
+        margin: auto;
+        justify-content: space-between;
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }

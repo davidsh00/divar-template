@@ -1,24 +1,36 @@
 .form-control {
+  font-size: $form-control-font-size;
   position: relative;
-  border: 1px solid $input-border-color;
   width: 100%;
-  .form-control-label {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    label {
-        opacity: 0;
-        @include transition(all .2s ease-in-out);
-      margin-right: 1rem;
+  &-input {
+    @extend %transition-easy-1;
+    border-radius: $input-border-radius;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $border-primary-color;
+    font-size: $form-control-font-size;
+    padding:$form-control-input-padding;
+    padding-right: $form-control-input-stat-text;
+    &:focus-within {
+      border-color: $border-secondary-color;
+    }
+    &:placeholder-shown + .form-control-label {
+      opacity: 1;
+      animation: 0.5s forwards ease-in-out text-write;
     }
   }
-  input {
-    width: 100%;
-    padding: 0.5rem;
-    padding-right: 3rem;
-    &:placeholder-shown+.form-control-label label {
-      opacity: 1;
-    }
+  &-icon {
+    @extend %translateX-center;
+    right: $form-control-input-padding;
+    font-size: $form-control-icon-size;
+  }
+  &-label {
+    pointer-events: none;
+    @extend %translateX-center;
+    font-size: $form-control-font-size ;
+    opacity: 0; 
+    overflow: hidden;
+    white-space: nowrap;
+    right: $form-control-input-stat-text;
   }
 }

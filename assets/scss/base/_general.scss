@@ -26,3 +26,13 @@ img {
   }
 }
 
+%transition-easy-1{
+  @include transition(all .1s ease-in-out);
+}
+
+%translateX-center{
+  position: absolute;
+  top: 50%;
+  @include transform(translateY(-50%))
+}
+
