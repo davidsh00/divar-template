@@ -1,7 +1,7 @@
 # INFO
 
 Divar Template,
-Here is [Demo](https://github.com/davidsh00/divar-template/deployments/github-pages)
+Here is [Demo](https://davidsh00.github.io/divar-template/)
 
 # ToDo
 ## David todo
