@@ -3,7 +3,7 @@
 Divar Template,
 Here is [Demo](https://davidsh00.github.io/divar-template/)
 
-you can click to navigation links to see other pages ....
+you can click to navigation links to see other pages .....
 
 # ToDo
 ## David todo
