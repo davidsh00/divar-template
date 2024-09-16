@@ -152,6 +152,52 @@ img {
   transform: translateY(-50%);
 }
 
+.contact-btn {
+  padding: 0.7rem 1.8rem;
+  color: white;
+  background-color: #a62626;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.contact-btn:hover {
+  opacity: 0.88;
+}
+
+.chat-Btn {
+  padding: 0.7rem 3.5rem;
+  color: rgba(0, 0, 0, 0.56);
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.56);
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.chat-Btn:hover {
+  opacity: 0.88;
+  background-color: rgba(128, 128, 128, 0.178);
+}
+
+.social-icon i {
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+
+.social-icon i:hover {
+  background-color: rgba(128, 128, 128, 0.178);
+}
+
 .form-control {
   font-size: 1.8rem;
   position: relative;
@@ -184,6 +230,163 @@ img {
   overflow: hidden;
   white-space: nowrap;
   right: 3.3rem;
+}
+
+@media screen and (min-width: 360px) {
+  #detail-page .detail {
+    padding: 5rem 2rem;
+  }
+  #detail-page .road {
+    display: flex;
+  }
+  #detail-page .road h4 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #detail-page .road-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    margin-top: 4rem;
+  }
+  #detail-page .detail-about h1 {
+    width: 100%;
+    color: black !important;
+  }
+  #detail-page .detail-about h3 {
+    margin-top: 2rem;
+  }
+  #detail-page .contact-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #detail-page .detail-Btn {
+    margin-top: 3rem;
+    display: flex;
+  }
+  #detail-page .detail-Btn button {
+    margin-left: 0.5rem;
+  }
+  #detail-page .social-icon {
+    margin-top: 3rem;
+    display: none;
+  }
+  #detail-page #Expertise {
+    color: black;
+    margin-top: 3.5rem;
+  }
+  #detail-page .detail-about-product {
+    margin-top: 2rem;
+  }
+  #detail-page .about-product1, #detail-page .about-product2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+  }
+  #detail-page .about-product2 {
+    color: black;
+  }
+  #detail-page #undeline {
+    border: 0.01px solid rgba(0, 0, 0, 0.56);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  #detail-page .status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.2rem;
+  }
+  #detail-page .status h4, #detail-page h5 {
+    font-size: 1.6rem;
+  }
+  #detail-page .status h5 {
+    color: black;
+  }
+  #detail-page .description {
+    color: black;
+    font-size: 1.8rem;
+  }
+  #detail-page .description p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #detail-page .description button {
+    font-size: 1.5rem;
+    color: rgb(110, 110, 110);
+    padding: 0.4rem;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+  }
+  #detail-page .description button:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+  #detail-page .img-product img {
+    width: 100%;
+    height: 200px;
+    border-radius: 3px;
+    margin-bottom: 3%;
+    object-fit: cover;
+    -o-object-fit: cover;
+  }
+  #detail-page .another-img {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 4%;
+    display: none;
+  }
+  #detail-page .another-img img {
+    margin-left: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+    -o-object-fit: cover;
+  }
+  #detail-page .input-note {
+    border: 1.5px solid gray;
+    border-radius: 3px;
+    transition-duration: 0.1s;
+  }
+  #detail-page .input-note input {
+    max-width: 100%;
+    padding: 1rem 1rem 10rem;
+    font-size: 1.5rem;
+  }
+  #detail-page .input-note:hover {
+    border: 2px solid rgba(53, 53, 53, 0.384);
+  }
+  #detail-page .detail-img label {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #detail-page .detail {
+    padding: 5rem 5rem;
+  }
+  #detail-page .road-detail {
+    column-gap: 7rem;
+  }
+  #detail-page .detail-about h1 {
+    width: 80%;
+  }
+  #detail-page .social-icon {
+    display: block;
+  }
+  #detail-page .another-img {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 4%;
+  }
+  #detail-page .img-product img {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 #indexPage {
@@ -225,6 +428,7 @@ img {
   }
 }
 #indexPage main {
+  overflow: auto;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -303,208 +507,7 @@ img {
 #indexPage footer .footer-social ul i {
   font-size: 2rem;
 }
-.contact-btn {
-  padding: 0.7rem 1.8rem;
-  color: white;
-  background-color: #a62626;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: bold;
-  transition-duration: 0.5s;
-}
 
-.contact-btn:hover {
-  opacity: 0.88;
-}
-
-.chat-Btn {
-  padding: 0.7rem 3.5rem;
-  color: rgba(0, 0, 0, 0.56);
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.56);
-  cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: bold;
-  transition-duration: 0.5s;
-}
-
-.chat-Btn:hover {
-  opacity: 0.88;
-  background-color: rgba(128, 128, 128, 0.178);
-}
-
-.social-icon i {
-  background-color: transparent;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
-  transition-duration: 0.5s;
-}
-
-.social-icon i:hover {
-  background-color: rgba(128, 128, 128, 0.178);
-}
-
-@media screen and (min-width: 360px) {
-  .detail {
-    padding: 5rem 2rem;
-  }
-  .road {
-    display: flex;
-  }
-  .road h4 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-  .road-detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
-    margin-top: 4rem;
-  }
-  .detail-about h1 {
-    width: 100%;
-    color: black !important;
-  }
-  .detail-about h3 {
-    margin-top: 2rem;
-  }
-  .contact-detail {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .detail-Btn {
-    margin-top: 3rem;
-    display: flex;
-  }
-  .detail-Btn button {
-    margin-left: 0.5rem;
-  }
-  .social-icon {
-    margin-top: 3rem;
-    display: none;
-  }
-  #Expertise {
-    color: black;
-    margin-top: 3.5rem;
-  }
-  .detail-about-product {
-    margin-top: 2rem;
-  }
-  .about-product1, .about-product2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    text-align: center;
-  }
-  .about-product2 {
-    color: black;
-  }
-  #undeline {
-    border: 0.01px solid rgba(0, 0, 0, 0.56);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  .status {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.2rem;
-  }
-  .status h4, h5 {
-    font-size: 1.6rem;
-  }
-  .status h5 {
-    color: black;
-  }
-  .description {
-    color: black;
-    font-size: 1.8rem;
-  }
-  .description p {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  .description button {
-    font-size: 1.5rem;
-    color: rgb(110, 110, 110);
-    padding: 0.4rem;
-    border-radius: 5px;
-    transition-duration: 0.5s;
-  }
-  .description button:hover {
-    background-color: rgba(128, 128, 128, 0.5);
-  }
-  .img-product img {
-    width: 100%;
-    height: 200px;
-    border-radius: 3px;
-    margin-bottom: 3%;
-    object-fit: cover;
-    -o-object-fit: cover;
-  }
-  .another-img {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    margin-bottom: 4%;
-    display: none;
-  }
-  .another-img img {
-    margin-left: 1rem;
-    border-radius: 8px;
-    object-fit: cover;
-    -o-object-fit: cover;
-  }
-  .input-note {
-    border: 1.5px solid gray;
-    border-radius: 3px;
-    transition-duration: 0.1s;
-  }
-  .input-note input {
-    max-width: 100%;
-    padding: 1rem 1rem 10rem;
-    font-size: 1.5rem;
-  }
-  .input-note:hover {
-    border: 2px solid rgba(53, 53, 53, 0.384);
-  }
-  .detail-img label {
-    font-size: 1.3rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .detail {
-    padding: 5rem 5rem;
-  }
-  .road-detail {
-    column-gap: 7rem;
-  }
-  .detail-about h1 {
-    width: 80%;
-  }
-  .social-icon {
-    display: block;
-  }
-  .another-img {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    margin-bottom: 4%;
-  }
-  .img-product img {
-    width: 100%;
-    height: 300px;
-  }
-}
 :root {
   --login-color: #a62626;
 }
@@ -638,6 +641,5 @@ img {
   align-self: center;
   cursor: pointer;
 }
-
 
 /*# sourceMappingURL=styles.css.map */
