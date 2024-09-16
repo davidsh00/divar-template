@@ -20,3 +20,24 @@ $form-control-font-size:1.8rem;
 $form-control-icon-size:$form-control-font-size;
 $form-control-input-padding:1rem;
 $form-control-input-stat-text: $form-control-input-padding + $form-control-icon-size +.5rem;
+
+//? contact buttons 
+$background-colors: #a62626;
+$padding-btn: 0.7rem 1.8rem;
+$text-color-btn: white;
+$font-size-btn: 1.5rem;
+$transition-duration: 0.5s;
+$opacity-hover-btn: 0.88;
+
+//? chat buttons 
+$hover-background-color: rgba(128, 128, 128, 0.178);
+$padding-chat-btn: 0.7rem 3.5rem;
+
+
+//? icons style
+$font-size-icon: 1.5rem;
+$padding-icon: 0.8rem;
+$color-icon: gray;
+
+//? icons hover
+$background-icon-hover: rgba(128, 128, 128, 0.178);
