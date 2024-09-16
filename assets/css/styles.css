@@ -465,9 +465,9 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5rem;
 }
 #indexPage main .section-wrapper .section-content .card-item {
+  flex-basis: 32%;
   font-weight: 400;
   font-size: 1.5rem;
   width: 5rem;
@@ -475,6 +475,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 576px) {
+  #indexPage main .section-wrapper .section-content .card-item {
+    flex-basis: 20%;
+  }
 }
 #indexPage footer {
   width: 100%;

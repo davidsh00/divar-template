@@ -52,16 +52,21 @@
         }
         &-content{
           .card-list{
-           @include flex($fwrap:wrap,$gap:5rem); 
+           @include flex($fwrap:wrap); 
 
            
           }
           .card-item{
+            flex-basis: 32%;
+
             font-weight: 400;
            font-size: 1.5rem;
            width: 5rem;
            height: 5rem;
            @include flex;
+           @include breakpoint(sm){
+            flex-basis: 20%;
+           }
 
 
           }
