@@ -1,0 +1,29 @@
+.contact-btn {
+    padding: $padding-btn;
+    color: $text-color-btn;
+    background-color: $background-colors;
+    border: none;
+    cursor: pointer;
+    font-size: $font-size-btn;
+    border-radius: $input-border-radius;
+    font-weight: bold;
+    transition-duration: $transition-duration;
+}
+.contact-btn:hover {
+    opacity: $opacity-hover-btn;
+}
+.chat-Btn {
+    padding: $padding-chat-btn;
+    color: $text-primery-color;
+    background-color: transparent;
+    border: 1px solid $text-primery-color;
+    cursor: pointer;
+    font-size: $font-size-btn;
+    border-radius: $input-border-radius;
+    font-weight: bold;
+    transition-duration: $transition-duration;
+}
+.chat-Btn:hover {
+    opacity: $opacity-hover-btn;
+    background-color: $hover-background-color;
+}
