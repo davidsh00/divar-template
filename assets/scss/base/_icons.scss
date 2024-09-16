@@ -1,0 +1,11 @@
+.social-icon i {
+    background-color: transparent;
+    font-size: $font-size-icon;
+    cursor: pointer;
+    padding: $padding-icon;
+    border-radius: 50%;
+    transition-duration: $transition-duration;
+}
+.social-icon i:hover {
+    background-color: $background-icon-hover;
+}
