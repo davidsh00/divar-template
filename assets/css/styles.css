@@ -196,4 +196,66 @@ img {
   }
 }
 
+@media screen and (min-width: 360px) {
+  .Bookmark {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Bookmark-cards {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+    padding: 2rem;
+  }
+  .about-bookmark {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-bookmark h2 {
+    color: black;
+    margin-bottom: 49%;
+  }
+  .bookmark-btn {
+    display: flex;
+  }
+  .bookmark-btn button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid gray;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    color: gray;
+    font-size: 1.1rem;
+  }
+  .bookmark-btn button:hover {
+    background-color: rgba(199, 199, 199, 0.61);
+  }
+  .bookmark-btn button i {
+    margin-left: 0.1rem;
+  }
+  .bookmark-img {
+    height: 70%;
+  }
+  .bookmark-img img {
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 662px) {
+  .Bookmark {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .Bookmark {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .about-bookmark h2 {
+    margin-bottom: 30%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
