@@ -1,4 +1,4 @@
-# INFO
+## INFO
 
 Divar Template
 
