@@ -1,0 +1,45 @@
+// responsive 
+@media screen and (min-width: 360px) {
+    .note {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+    .notes {
+        border: 0.1px solid $border-box-color;
+        border-radius: 5px;
+        padding: 2rem;
+    }
+    .note a {
+        display: flex;
+    }
+    .notes a img {
+        width: 100px;
+        margin-left: 1rem;
+    }
+    .notes a div h2 {
+        margin-top: 1rem;
+        margin-bottom: 0.7rem;
+    }
+    .note a div h4 {
+        margin-top: 1rem;
+    }
+    div i{
+        display: flex;
+        justify-content: end;
+        font-size: 1.9rem;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 662px) {
+    .note {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .note {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

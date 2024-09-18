@@ -41,7 +41,7 @@
 }
 
 .under-line {
-    border: 0.1px solid rgba(128, 128, 128, 0.253);
+    border: 0.1px solid $border-box-color;
     margin-top: 1rem;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .under-linee {
-    border: 0.1px solid rgba(128, 128, 128, 0.253);
+    border: 0.1px solid $border-box-color;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
