@@ -1,0 +1,51 @@
+// responsive 
+@media screen and (min-width: 360px) {
+    .product-divar {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        padding: 2rem;
+    }
+    .min-pro {
+        width: 100%;
+    }
+    .main-product {
+        display: flex;
+        border: 1px solid $border-box-color;
+        border-radius: 5px;
+        padding: 1rem;
+        transition-duration: 0.5s;
+    }
+    .main-product:hover {
+        border: 1px solid $product-border-hover;
+        background-color: $hover-background-color;
+    }
+    .img-divar img{
+        width: 100px;
+        margin-left: 1rem;
+    }
+    .info-divar h4 {
+        margin-bottom: 0.5rem;
+        margin-top: 0.2rem;
+    }
+    .info-divar h4 span {
+        color: black;
+    }
+    .time-product {
+        display: flex;
+    }
+    .time-product h4 {
+        margin-left: 1rem;
+    }
+}
+@media screen and (min-width: 622px) {
+    .product-divar {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .product-divar {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

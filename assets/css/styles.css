@@ -428,8 +428,8 @@ img {
   }
 }
 #indexPage main {
-  /* overflow: auto; */
-  /* width: 100%; */
+  overflow: auto;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -513,6 +513,56 @@ img {
   font-size: 2rem;
 }
 
+@media screen and (min-width: 360px) {
+  .product-divar {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding: 2rem;
+  }
+  .min-pro {
+    width: 100%;
+  }
+  .main-product {
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    border-radius: 5px;
+    padding: 1rem;
+    transition-duration: 0.5s;
+  }
+  .main-product:hover {
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    background-color: rgba(128, 128, 128, 0.178);
+  }
+  .img-divar img {
+    width: 100px;
+    margin-left: 1rem;
+  }
+  .info-divar h4 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .info-divar h4 span {
+    color: black;
+  }
+  .time-product {
+    display: flex;
+  }
+  .time-product h4 {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 622px) {
+  .product-divar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .product-divar {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 :root {
   --login-color: #a62626;
 }
