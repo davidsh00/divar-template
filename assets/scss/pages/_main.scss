@@ -24,6 +24,7 @@
     .img-divar img{
         width: 100px;
         margin-left: 1rem;
+        border-radius: 5px;
     }
     .info-divar h4 {
         margin-bottom: 0.5rem;
@@ -38,6 +39,29 @@
     .time-product h4 {
         margin-left: 1rem;
     }
+    .menu {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .sm-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        padding: 0 3rem;
+    }
+    .sm-nav div img {
+        width: 50px;
+    }
+    .sm-nav div button {
+        background-color: transparent;
+        color: gray;
+    }
+    .sm-nav div button i{
+        font-size: 3rem;
+    }
 }
 @media screen and (min-width: 622px) {
     .product-divar {
@@ -46,6 +70,97 @@
 }
 @media screen and (min-width: 1024px) {
     .product-divar {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 78%;
+        margin-right: 20rem;
+    }
+    ///////////// Menu /////////////
+    .menu {
+        display: block;
+        position: fixed;
+        scrollbar-width: 0;
+        top: 85px;
+        right: 0;
+        background-color: transparent;
+        color: white;
+        width: 25%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+    .link-menu {
+        color: $text-primery-color;
+        padding: 1.2rem 4rem;
+        font-weight: bold;
+        transition-duration: $transition-duration;
+    }
+    .link-menu:hover {
+        color: black;
+    }
+    // social icon
+    .social {
+            color: $text-primery-color;
+    }
+    .social div {
+            display: flex;
+            justify-content: start;
+            margin-top: 3rem;
+            margin-right: 2.5rem;
+    }
+    .social div a {
+        transition-duration: $transition-duration;
+    }
+    .social div a i {
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+    .social div a:hover {
+            color: rgb(65, 65, 65);
+    }
+    // Nav
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        padding: 2rem;
+    }
+    nav div img {
+        width: 50px;
+        object-fit: cover;
+        -o-object-fit: cover;
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 3rem;
+    }
+    .nav-link a {
+        margin-left: 3rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .nav-search input{
+        background-color: rgb(241, 241, 241);
+        padding: 1rem;
+        border-radius: 5px;
+        color: $end-section-border-color;
+        font-size: 1.2rem;
+        width: 130%;
+        transition-duration: $transition-duration;
+    }
+    .nav-search input:hover {
+        border: 1px solid $border-box-color;
+    }
+    #Nav-city {
+        margin-left: 4rem;
+    }
+    .link-nav {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .sm-nav {
+        display: none;
     }
 }
