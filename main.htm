@@ -12,17 +12,31 @@
 <body>
     <!-- Nav -->
     <nav>
-        <div>
+        <div class="nav-item">
             <a href="#">
             <img src="./assets/images/icon/favicon-32x32.png" alt="">
             </a>
-        </div>
-        <div class="link-nav">
-            <a id="Nav-city" href="#">تهران</a>
-            <a href="#">دسته ها</a>
-        </div>
-        <div class="nav-search">
-            <input type="search" placeholder="جستجو در همه آگهی ها">
+            <div class="link-nav">
+                <a id="Nav-city" href="#">تهران</a>
+                <div class="dropdown">
+                    <button id="btn-navbar"> دسته ها<i class="bi bi-arrow-down-short"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> املاک</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> وسایل نقلیه</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> کالای دیجیتال</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> خانه و آشپزخانه</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> خدمات</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> وسایل شخصی</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> سرگرمی و فراغت</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> اجتماعی</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> تجهیزات</a>
+                        <a href="#"><i class="bi bi-arrow-left-short"></i> استخدام و کاریابی</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input type="search" placeholder="جستجو در همه آگهی ها">
+            </div>
         </div>
         <div class="nav-link">
             <a href="#">دیوار من</a>
@@ -185,5 +199,14 @@
             </div>
         </section>
     </main>
+
+    <script>
+        let btnNav = document.querySelector('#btn-navbar')
+        let dropdowncCntent = document.querySelector('.dropdown-content')
+        function addClasList () {
+            dropdowncCntent.classList.toggle('dis-block')
+        }
+        btnNav.addEventListener('click', addClasList)
+    </script>
 </body>
 </html>
