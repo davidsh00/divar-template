@@ -16,10 +16,6 @@
             <a href="#">
             <img src="./assets/images/icon/favicon-32x32.png" alt="">
             </a>
-
-
-
-
             <div class="link-nav">
                 <a id="Nav-city" href="#">تهران</a>
                 <div class="dropdown">
@@ -64,17 +60,23 @@
                         </div>
                 </div>
             </div>
-
-
-
-
-
             <div class="nav-search">
                 <input type="search" placeholder="جستجو در همه آگهی ها">
             </div>
         </div>
         <div class="nav-link">
-            <a href="#">دیوار من</a>
+            <div class="my-dropdown">
+                    <button id="my-profile-btn">دیوار من</button>
+                    <div class="my-dropdown-content">
+                        <a href="#">ورود</a>
+                        <a href="#">نشان ها</a>
+                        <a href="#">یادداشت ها</a>
+                        <a href="#">بازدیدهای اخیر</a>
+                        <a href="#">مقابله با مزاحمت و کلاهبرداری</a>
+                        <a href="#">تنظیمات ظاهر دیوار</a>
+                        <a href="#">دیوار برای کسب و کارها</a>
+                    </div>
+            </div>
             <a href="#">چت</a>
             <a href="#">پشتیبانی</a>
             <a href="#">Fa</a>
@@ -237,19 +239,19 @@
 
     <script>
         let btnNav = document.querySelector('#btn-navbar')
+        let profileBtn = document.getElementById('my-profile-btn')
         let dropdowncCntent = document.querySelector('.dropdown-content')
-        let amlak = document.getElementById('amlak')
-        let aboutamlak = document.querySelector('.fdfasf')
+        let profileContent = document.querySelector('.my-dropdown-content')
+
         function addClasList () {
             dropdowncCntent.classList.toggle('dis-block')
         }
+        function myProfile () {
+            profileContent.classList.toggle('dis-flex')            
+        }
         btnNav.addEventListener('click', addClasList)
-        amlak.addEventListener('mouseenter', function () {
-            aboutamlak.style.display = 'grid'
-        })
-        amlak.addEventListener('mouseleave', function () {
-            aboutamlak.style.display = 'none'
-        })
+        profileBtn.addEventListener('click', myProfile)
+
     </script>
 </body>
 </html>
