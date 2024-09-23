@@ -16,24 +16,59 @@
             <a href="#">
             <img src="./assets/images/icon/favicon-32x32.png" alt="">
             </a>
+
+
+
+
             <div class="link-nav">
                 <a id="Nav-city" href="#">تهران</a>
                 <div class="dropdown">
                     <button id="btn-navbar"> دسته ها<i class="bi bi-arrow-down-short"></i></button>
-                    <div class="dropdown-content">
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> املاک</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> وسایل نقلیه</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> کالای دیجیتال</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> خانه و آشپزخانه</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> خدمات</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> وسایل شخصی</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> سرگرمی و فراغت</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> اجتماعی</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> تجهیزات</a>
-                        <a href="#"><i class="bi bi-arrow-left-short"></i> استخدام و کاریابی</a>
-                    </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-links">
+                                <div class="dropdown-links-one">
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> املاک</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> وسایل نقلیه</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> کالای دیجیتال</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> خانه و آشپزخانه</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> خدمات</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> وسایل شخصی</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> سرگرمی و فراغت</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> اجتماعی</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> تجهیزات</a>
+                                    <a href="#"><i class="bi bi-arrow-left-short"></i> استخدام و کاریابی</a>
+                                </div>
+                                <div class="dropdown-links-two">
+                                    <div class="teifas">
+                                        <div class="menu-nav-link-amlak">
+                                            <div>
+                                                <h4>فروش مسکن</h4>
+                                                <h5>آپارتمان</h5>
+                                                <h5>خانه و ویلا</h5>
+                                                <h5>زمین کلنگی</h5>
+                                            </div>
+                                            <div>
+                                                <h4>اجاره مسکونی</h4>
+                                                <h5>آپارتمان</h5>
+                                                <h5>خانه و ویلا</h5>
+                                            </div>
+                                            <div>
+                                                <h4>فروش اداری و تجارت</h4>
+                                                <h5>دفتر کار، اتاق اداری و مطب</h5>
+                                                <h5>مغازه و غرفه</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
+
+
+
+
+
             <div class="nav-search">
                 <input type="search" placeholder="جستجو در همه آگهی ها">
             </div>
@@ -203,10 +238,18 @@
     <script>
         let btnNav = document.querySelector('#btn-navbar')
         let dropdowncCntent = document.querySelector('.dropdown-content')
+        let amlak = document.getElementById('amlak')
+        let aboutamlak = document.querySelector('.fdfasf')
         function addClasList () {
             dropdowncCntent.classList.toggle('dis-block')
         }
         btnNav.addEventListener('click', addClasList)
+        amlak.addEventListener('mouseenter', function () {
+            aboutamlak.style.display = 'grid'
+        })
+        amlak.addEventListener('mouseleave', function () {
+            aboutamlak.style.display = 'none'
+        })
     </script>
 </body>
 </html>
