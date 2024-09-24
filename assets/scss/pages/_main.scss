@@ -39,12 +39,14 @@
     .time-product h4 {
         margin-left: 1rem;
     }
+    ///////////// menue ///////////
     .menu {
         display: none;
     }
     nav {
         display: none;
     }
+    ///////////////// sm nav  ///////////////
     .sm-nav {
         display: flex;
         align-items: center;
@@ -62,10 +64,41 @@
     .sm-nav div button i{
         font-size: 3rem;
     }
+    .sm-manue {
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        padding: 1.8rem 3.8rem 1.2rem;
+        gap: 0.5rem;
+        width: 100%;
+        height: 250px;
+    }
+    .sm-manue a {
+        display: flex;
+        font-size: 1.2rem;
+        color: gray;
+        font-weight: bold;
+        transition-duration: $transition-duration;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    .sm-manue a:hover {
+        color: rgb(108, 108, 108);
+        background-color: rgb(211, 211, 211);
+    }
+    .sm-manue a i {
+        margin-left: 1rem;
+    }
+    .dis-grid {
+        display: grid;
+    }
 }
 @media screen and (min-width: 622px) {
     .product-divar {
         grid-template-columns: 1fr 1fr;
+    }
+    .sm-manue {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -163,6 +196,9 @@
     .sm-nav {
         display: none;
     }
+    .sm-manue {
+        display: none;
+    }
     .nav-item {
         display: flex;
         align-items: center;
@@ -205,16 +241,17 @@
     .dropdown-links-two {
         width: 40%;
     }
-    .menu-nav-link-amlak {
+    // املاک و وسایل نقلیه
+    .menu-nav-link-amlak , .nav-car {
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 2rem;
         padding: 2rem;
     }
-    .menu-nav-link-amlak div h5 {
+    .menu-nav-link-amlak div h5 , .nav-car div h5 {
         margin-top: 1rem;
     }
-    .menu-nav-link-amlak div h4, h5 {
+    .menu-nav-link-amlak div h4, h5 , .nav-car div h4, h5 {
         transition-duration: $transition-duration;
         cursor: pointer;
     }
@@ -237,6 +274,10 @@
     }
     .dropdown-content a:hover {
         background-color: rgb(241, 241, 241);
+    }
+    // وسایل نقلیه
+    .nav-car {
+        display: none;
     }
     // divar man
     .my-dropdown {

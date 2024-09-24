@@ -12,6 +12,7 @@
 <body>
     <!-- Nav -->
     <nav>
+        <!-- nav img -->
         <div class="nav-item">
             <a href="#">
             <img src="./assets/images/icon/favicon-32x32.png" alt="">
@@ -22,20 +23,20 @@
                     <button id="btn-navbar"> دسته ها<i class="bi bi-arrow-down-short"></i></button>
                         <div class="dropdown-content">
                             <div class="dropdown-links">
-                                <div class="dropdown-links-one">
-                                    <a href="#"><i class="bi bi-arrow-left-short"></i> املاک</a>
-                                    <a href="#"><i class="bi bi-arrow-left-short"></i> وسایل نقلیه</a>
-                                    <a href="#"><i class="bi bi-arrow-left-short"></i> کالای دیجیتال</a>
-                                    <a href="#"><i class="bi bi-arrow-left-short"></i> خانه و آشپزخانه</a>
-                                    <a href="#"><i class="bi bi-arrow-left-short"></i> خدمات</a>
-                                    <a href="#"><i class="bi bi-arrow-left-short"></i> وسایل شخصی</a>
-                                    <a href="#"><i class="bi bi-arrow-left-short"></i> سرگرمی و فراغت</a>
+                                <div class="dropdown-links-one" >
+                                    <a class="link-navbar" href="#"><i class="bi bi-arrow-left-short"></i> املاک</a>
+                                    <a class="link-navbar" href="#"><i class="bi bi-arrow-left-short"></i> وسایل نقلیه</a>
+                                    <a class="link-navbar" href="#"><i class="bi bi-arrow-left-short"></i> کالای دیجیتال</a>
+                                    <a class="link-navbar" href="#"><i class="bi bi-arrow-left-short"></i> خانه و آشپزخانه</a>
+                                    <a class="link-navbar" href="#"><i class="bi bi-arrow-left-short"></i> خدمات</a>
+                                    <a class="link-navbar" href="#"><i class="bi bi-arrow-left-short"></i> وسایل شخصی</a>
+                                    <a class="link-navbar" href="#"><i class="bi bi-arrow-left-short"></i> سرگرمی و فراغت</a>
                                     <a href="#"><i class="bi bi-arrow-left-short"></i> اجتماعی</a>
                                     <a href="#"><i class="bi bi-arrow-left-short"></i> تجهیزات</a>
                                     <a href="#"><i class="bi bi-arrow-left-short"></i> استخدام و کاریابی</a>
                                 </div>
                                 <div class="dropdown-links-two">
-                                    <div class="teifas">
+                                    <div class="">
                                         <div class="menu-nav-link-amlak">
                                             <div>
                                                 <h4>فروش مسکن</h4>
@@ -54,16 +55,34 @@
                                                 <h5>مغازه و غرفه</h5>
                                             </div>
                                         </div>
+                                        <div class="nav-car">
+                                            <div>
+                                                <h4>خودرو</h4>
+                                                <h5>سواری و وانت</h5>
+                                                <h5>کلاسیک</h5>
+                                                <h5>اجاره ای</h5>
+                                                <h5>سنگین</h5>
+                                            </div>
+                                            <div>
+                                                <h4>موتور سیکلت</h4>
+                                                <h5>قطعات یدکی و لوازم جانبی</h5>
+                                                <h5>قایق و سایر وسایل نقلیه</h5>
+                                            </div>
+                                        </div>
+                                        <div>
+                                    </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                 </div>
-            </div>
-            <div class="nav-search">
-                <input type="search" placeholder="جستجو در همه آگهی ها">
-            </div>
+                <!-- nav search -->
+                <div class="nav-search">
+                        <input type="search" placeholder="جستجو در همه آگهی ها">
+                </div>
         </div>
+        <!-- nav links -->
         <div class="nav-link">
             <div class="my-dropdown">
                     <button id="my-profile-btn">دیوار من</button>
@@ -83,6 +102,8 @@
             <button class="contact-btn">ثبت آگهی</button>
         </div>
     </nav>
+    
+    <!-- sm navbar -->
     <section class="sm-nav">
         <div>
             <a href="#">
@@ -90,9 +111,22 @@
             </a>
         </div>
         <div>
-            <button><i class="bi bi-list"></i></button>
+            <button id="sm-menue-btn"><i class="bi bi-list"></i></button>
         </div>
     </section>
+    
+    <!-- sm nav -->
+    <div class="sm-manue">
+        <a href="#"><i class="bi bi-house"></i>املاک</a>
+        <a href="#"><i class="bi bi-car-front"></i> وسایل نقلیه</a>
+        <a href="#"><i class="bi bi-phone"></i> کالای دیجیتال</a>
+        <a href="#"><i class="bi bi-lamp"></i> خانه و آشپزخانه</a>
+        <a href="#"><i class="bi bi-pen"></i> خدمات</a>
+        <a href="#"><i class="bi bi-stopwatch"></i> وسایل شخصی</a>
+        <a href="#"><i class="bi bi-dice-6"></i> سرگرمی و فراغت</a>
+        <a href="#"><i class="bi bi-people-fill"></i> اجتماعی</a>
+        <a href="#"> <i class="bi bi-backpack"></i> استخدام و کاریابی</a>
+    </div>
 
     <!-- Menu & Product card -->
     <main>
@@ -237,21 +271,6 @@
         </section>
     </main>
 
-    <script>
-        let btnNav = document.querySelector('#btn-navbar')
-        let profileBtn = document.getElementById('my-profile-btn')
-        let dropdowncCntent = document.querySelector('.dropdown-content')
-        let profileContent = document.querySelector('.my-dropdown-content')
-
-        function addClasList () {
-            dropdowncCntent.classList.toggle('dis-block')
-        }
-        function myProfile () {
-            profileContent.classList.toggle('dis-flex')            
-        }
-        btnNav.addEventListener('click', addClasList)
-        profileBtn.addEventListener('click', myProfile)
-
-    </script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
