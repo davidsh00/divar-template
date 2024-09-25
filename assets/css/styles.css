@@ -723,6 +723,7 @@ img {
     padding: 2rem;
   }
   nav div img {
+    align-items: center;
     width: 50px;
     object-fit: cover;
     -o-object-fit: cover;
@@ -731,12 +732,22 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 3rem;
+    margin-right: 1rem;
   }
   .nav-link a {
-    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .nav-link a i {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  .nav-link button {
+    display: flex;
+    align-items: center;
   }
   .nav-search input {
     background-color: rgb(241, 241, 241);
@@ -745,17 +756,25 @@ img {
     color: rgba(0, 0, 0, 0.116);
     font-size: 1.2rem;
     transition-duration: 0.5s;
-    width: 40rem;
+    width: 28rem;
   }
   .nav-search input:hover {
     border: 1px solid rgba(128, 128, 128, 0.253);
   }
   #Nav-city {
-    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .bi-geo-alt {
+    margin-left: 1rem;
   }
   .link-nav {
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: 1.2rem;
+    margin-right: 1rem;
   }
   .sm-nav {
     display: none;
@@ -769,7 +788,7 @@ img {
     justify-content: space-between;
   }
   .nav-item a {
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .dropdown {
     display: inline-block;
@@ -872,6 +891,14 @@ img {
   }
   .dis-none {
     display: none;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .nav-search input {
+    width: 50rem;
+  }
+  .nav-link a {
+    margin-left: 2rem;
   }
 }
 :root {
