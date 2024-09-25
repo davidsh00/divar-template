@@ -64,9 +64,29 @@
     .sm-nav div button i{
         font-size: 3rem;
     }
+    .sm-nav-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    #adds-btn {
+        padding: $padding-btn;
+        color: $text-color-btn;
+        background-color: $background-colors;
+        border: none;
+        cursor: pointer;
+        font-size: $font-size-btn;
+        border-radius: $input-border-radius;
+        font-weight: bold;
+        transition-duration: $transition-duration;
+    }
+    #adds-btn:hover  {
+        opacity: $opacity-hover-btn;
+    }
     .sm-manue {
         display: none;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 1.8rem 3.8rem 1.2rem;
         gap: 0.5rem;
         width: 100%;

@@ -576,9 +576,29 @@ img {
   .sm-nav div button i {
     font-size: 3rem;
   }
+  .sm-nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #adds-btn {
+    padding: 0.7rem 1.8rem;
+    color: white;
+    background-color: #a62626;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition-duration: 0.5s;
+  }
+  #adds-btn:hover {
+    opacity: 0.88;
+  }
   .sm-manue {
     display: none;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 1.8rem 3.8rem 1.2rem;
     gap: 0.5rem;
     width: 100%;
