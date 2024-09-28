@@ -14,6 +14,11 @@ let locationContentSm = document.querySelector('.location-content-sm')
 // my div sm
 let myDivarBtnSm = document.querySelector('#my-div-btn-sm')
 let myDivContent = document.querySelector('.my-div-content-sm')
+// Box menue
+let amlakMenu = document.getElementById('menu-amlak')
+let Vehicles = document.getElementById('Vehicles')
+let boxMenu1 = document.querySelector('.about-link-menue1')
+let boxMenu2 = document.querySelector('.about-link-menue2')
 
 
 function addClasList () {
@@ -35,6 +40,12 @@ function locationBtnHandelerSm () {
 function mydivBtnSmHandeler () {
     myDivContent.classList.toggle('flex-display')
 }
+function openBoxHandeler1 () {
+    boxMenu1.classList.toggle('dis-block')
+}
+function openBoxHandeler2 () {
+    boxMenu2.classList.toggle('dis-block')
+}
 
 btnNav.addEventListener('click', addClasList)
 profileBtn.addEventListener('click', myProfile)
@@ -42,3 +53,5 @@ smMenueBtn.addEventListener('click', HambergerMenue)
 locationBtn.addEventListener('click', locationBtnHandeler)
 locationBtnSm.addEventListener('click', locationBtnHandelerSm)
 myDivarBtnSm.addEventListener('click', mydivBtnSmHandeler)
+amlakMenu.addEventListener('click', openBoxHandeler1)
+Vehicles.addEventListener('click', openBoxHandeler2)
