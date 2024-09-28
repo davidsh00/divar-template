@@ -5,10 +5,16 @@ let profileContent = document.querySelector('.my-dropdown-content')
 let aboutdropdown = document.querySelector('.dropdown-links-one')
 let smMenueBtn = document.getElementById('sm-menue-btn')
 let smMenue = document.querySelector('.sm-manue')
-let amlakMenu = document.getElementById('menu-amlak')
-let Vehicles = document.getElementById('Vehicles')
-let boxMenu1 = document.querySelector('.about-link-menue1')
-let boxMenu2 = document.querySelector('.about-link-menue2')
+// location btn
+let locationBtn = document.querySelector('#location-btn')
+let locationContent = document.querySelector('.location-content')
+// location btn sm 
+let locationBtnSm = document.querySelector('#location-btn-sm')
+let locationContentSm = document.querySelector('.location-content-sm')
+// my div sm
+let myDivarBtnSm = document.querySelector('#my-div-btn-sm')
+let myDivContent = document.querySelector('.my-div-content-sm')
+
 
 function addClasList () {
     dropdowncCntent.classList.toggle('dis-block')
@@ -19,15 +25,20 @@ function myProfile () {
 function HambergerMenue () {
     smMenue.classList.toggle('dis-grid')
 }
-function openBoxHandeler1 () {
-    boxMenu1.classList.toggle('dis-block')
+function locationBtnHandeler () {
+    locationContent.classList.toggle('dis-flex')
 }
-function openBoxHandeler2 () {
-    boxMenu2.classList.toggle('dis-block')
+
+function locationBtnHandelerSm () {
+    locationContentSm.classList.toggle('flex-display')
+}
+function mydivBtnSmHandeler () {
+    myDivContent.classList.toggle('flex-display')
 }
 
 btnNav.addEventListener('click', addClasList)
 profileBtn.addEventListener('click', myProfile)
 smMenueBtn.addEventListener('click', HambergerMenue)
-amlakMenu.addEventListener('click', openBoxHandeler1)
-Vehicles.addEventListener('click', openBoxHandeler2)
+locationBtn.addEventListener('click', locationBtnHandeler)
+locationBtnSm.addEventListener('click', locationBtnHandelerSm)
+myDivarBtnSm.addEventListener('click', mydivBtnSmHandeler)

@@ -112,6 +112,66 @@
     .dis-grid {
         display: grid;
     }
+    // dropdown loacation
+    .my-dropdown, .location-select, .location-select-sm, .my-div-sm {
+        display: inline-block;
+    }
+    .my-dropdown button , #location-btn , #location-btn-sm, #my-div-btn-sm{
+        display: flex;
+        padding: 1rem 2rem;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-left: 1rem;
+        color: gray;
+    }
+    .my-dropdown-content, .location-content, .location-content-sm, .my-div-content-sm {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 20rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        height: 325px;
+        margin-top: 1rem;
+    }
+    .my-dropdown-content a, .location-content a, .location-content-sm a, .my-div-content-sm a {
+        padding: 1rem;
+        width: 100%;
+        color: gray;
+    }
+    .my-dropdown-content  a:hover, .location-content a:hover, .location-content-sm a:hover , my-div-content-sm a:hover  {
+        background-color: rgb(241, 241, 241);
+    }
+    .location-content, .location-content-sm {
+        height: 350px;
+        overflow: scroll;
+    }
+    #location-btn-sm i , #my-div-btn-sm i{
+        margin-left: 0.5rem;
+    }
+    #location-btn-sm , #my-div-btn-sm{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+        transition-duration: $transition-duration;
+        font-family:  IRANSans, yekan, Arial, sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    #location-btn-sm:hover, #my-div-btn-sm:hover {
+        color: rgb(108, 108, 108);
+        background-color: rgb(211, 211, 211);
+    }
+    .my-div-content-sm {
+        height: 280px;
+    }
+    .flex-display {
+        display: flex;
+    }
 }
 @media screen and (min-width: 622px) {
     .product-divar {
@@ -283,9 +343,9 @@
         align-items: center;
         justify-content: space-between;
     }
-    .nav-item a {
-        margin-left: 1rem;
-    }
+    // .nav-item a {
+    //     margin-left: 1rem;
+    // }
     // dropdown
     .dropdown {
         display: inline-block;
@@ -353,39 +413,6 @@
         background-color: rgb(241, 241, 241);
     }
     // هاور شدن
-    
-    // divar man
-    .my-dropdown {
-        display: inline-block;
-    }
-    .my-dropdown button {
-        display: flex;
-        padding: 1rem 2rem;
-        background-color: transparent;
-        font-size: 1.5rem;
-        cursor: pointer;
-        margin-left: 1rem;
-        color: gray;
-    }
-    .my-dropdown-content {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 20rem;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        height: 325px;
-        margin-top: 1rem;
-    }
-    .my-dropdown-content a {
-        padding: 1rem;
-        width: 100%;
-        color: gray;
-    }
-    .my-dropdown-content  a:hover {
-        background-color: rgb(241, 241, 241);
-    }
     .dis-block {
         display: block;
     }
