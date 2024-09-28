@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Example</title>
+    <style>
+        .list-item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .info {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="list-item1" data-info="این متن مربوط به مورد 1 است">مورد 1</div>
+        <div class="list-item2" data-info="این متن مربوط به مورد 2 است">مورد 2</div>
+        <div class="list-item3" data-info="این متن مربوط به مورد 3 است">مورد 3</div>
+    </div>
+
+    <div class="info" id="info-display">معلومات را اینجا نشان دهید</div>
+
+    <script>
+        const listItems1 = document.querySelectorAll('.list-item1');
+        const listItems2 = document.querySelectorAll('.list-item2');
+        const listItems3 = document.querySelectorAll('.list-item3');
+        const infoDisplay = document.getElementById('info-display');
+
+        listItems1.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                infoDisplay.insertAdjacentHTML('beforeend', `                                        <div class="link-navbar-menu1">
+                                            <div>
+                                                <h4>فروش مسکن</h4>
+                                                <h5>آپارتمان</h5>
+                                                <h5>خانه و ویلا</h5>
+                                                <h5>زمین کلنگی</h5>
+                                            </div>
+                                            <div>
+                                                <h4>اجاره مسکونی</h4>
+                                                <h5>آپارتمان</h5>
+                                                <h5>خانه و ویلا</h5>
+                                            </div>
+                                            <div>
+                                                <h4>فروش اداری و تجارت</h4>
+                                                <h5>دفتر کار، اتاق اداری و مطب</h5>
+                                                <h5>مغازه و غرفه</h5>
+                                            </div>
+                                        </div>`)
+            });
+
+            item.addEventListener('mouseout', () => {
+                infoDisplay.textContent = ""; // متن اولیه
+            });
+        });
+        listItems2.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                infoDisplay.insertAdjacentHTML('beforeend', `                                        <div class="link-navbar-menu1">
+                                            <div>
+                                                <h4>فروش مسکن</h4>
+                                                <h5>آپارتمان</h5>
+                                                <h5>خانه و ویلا</h5>
+                                                <h5>زمین کلنگی</h5>
+                                            </div>
+                                            <div>
+                                                <h4>اجاره مسکونی</h4>
+                                                <h5>آپارتمان</h5>
+                                                <h5>خانه و ویلا</h5>
+                                            </div>`)
+            });
+
+            item.addEventListener('mouseout', () => {
+                infoDisplay.textContent = ""; // متن اولیه
+            });
+        });
+        listItems3.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                infoDisplay.insertAdjacentHTML('beforeend', `                                        <div class="link-navbar-menu1">
+                                            <div>
+                                                <h4>فروش مسکن</h4>
+                                                <h5>آپارتمان</h5>
+                                                <h5>خانه و ویلا</h5>
+                                                <h5>زمین کلنگی</h5>
+                                            </div>`)
+            });
+
+            item.addEventListener('mouseout', () => {
+                infoDisplay.textContent = ""; // متن اولیه
+            });
+        });
+    </script>
+</body>
+</html>

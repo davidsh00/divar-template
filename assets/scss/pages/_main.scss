@@ -382,21 +382,25 @@
         width: 40%;
     }
     // املاک و وسایل نقلیه
-    .link-navbar-menu1 , .link-navbar-menu2 {
-        display: grid;
+    .link-navbar-menu1 , .link-navbar-menu2,.link-navbar-menu3, .link-navbar-menu4, .link-navbar-menu5,.link-navbar-menu6,.link-navbar-menu7,.link-navbar-menu8,.link-navbar-menu9,link-navbar-menu10 {
+        display: none;
         grid-template-columns: 1fr 1fr;
         row-gap: 2rem;
         padding: 2rem;
     }
-    .link-navbar-menu1 div h5 , .link-navbar-menu2 div h5 {
+    .link-navbar-menu1 div h5 , .link-navbar-menu2 div h5 ,.link-navbar-menu3 div h5, .link-navbar-menu4 div h5, .link-navbar-menu5 div h5,.link-navbar-menu6 div h5,.link-navbar-menu7 div h5,.link-navbar-menu8 div h5,.link-navbar-menu9 div h5,.link-navbar-menu10 div h5 {
         margin-top: 1rem;
     }
-    .link-navbar-menu1 div h4, h5 , .link-navbar-menu2 div h4, h5 {
+    .link-navbar-menu1 div h4, h5 , .link-navbar-menu2 div h4, h5, .link-navbar-menu3 h4,h5, .link-navbar-menu4 h4, h5, .link-navbar-menu5 h4,h5,.link-navbar-menu6 h4,h5,.link-navbar-menu7 h4,h5,.link-navbar-menu8 h4,h5,.link-navbar-menu9 h4,h5,.link-navbar-menu10 h4,h5 {
         transition-duration: $transition-duration;
         cursor: pointer;
     }
     .link-navbar-menu1 div h4:hover,h5:hover {
         color: red;
+    }
+    .link-navbar-menu10 h4 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
     .dropdown-content a {
         color: black;
