@@ -392,16 +392,21 @@
         margin-top: 2rem;
     }
     .dropdown-content a {
-        color: black;
+        color: gray;
         padding: 13px 30px 13px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         font-size: 1rem;
         text-align: center;
+        transition-duration: $transition-duration;
     }
     .dropdown-content a:hover {
+        color: black;
         background-color: rgb(241, 241, 241);
+    }
+    .dropdown-content a i {
+        margin-left: 1rem;
+        color: gray;
     }
     // هاور شدن
     .dis-block {
