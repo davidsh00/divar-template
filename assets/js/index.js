@@ -46,6 +46,10 @@ function openBoxHandeler1 () {
 function openBoxHandeler2 () {
     boxMenu2.classList.toggle('dis-block')
 }
+function showContent(num) {
+    document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+    document.getElementById('content' + num).classList.toggle('active');
+}
 
 btnNav.addEventListener('click', addClasList)
 profileBtn.addEventListener('click', myProfile)
@@ -53,5 +57,3 @@ smMenueBtn.addEventListener('click', HambergerMenue)
 locationBtn.addEventListener('click', locationBtnHandeler)
 locationBtnSm.addEventListener('click', locationBtnHandelerSm)
 myDivarBtnSm.addEventListener('click', mydivBtnSmHandeler)
-amlakMenu.addEventListener('click', openBoxHandeler1)
-Vehicles.addEventListener('click', openBoxHandeler2)

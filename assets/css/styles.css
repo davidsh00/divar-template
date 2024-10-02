@@ -710,49 +710,49 @@ img {
     height: 100%;
     margin-top: 1rem;
   }
-  .link-menu {
-    color: rgba(0, 0, 0, 0.56);
-    padding: 1.2rem 3rem;
-    font-weight: bold;
-    transition-duration: 0.5s;
-  }
-  .link-menu:hover {
-    color: black;
-  }
-  .link-menu a {
-    display: flex;
-    align-items: center;
-  }
-  .link-menu a i {
-    margin-left: 1rem;
-  }
-  .about-link-menue1, .about-link-menue2 {
+  .content {
     display: none;
-    margin-top: 1rem;
-    padding: 2rem;
-    background-color: rgb(248, 248, 248);
-    color: white;
-    height: 230px;
   }
-  .about-link-menue1 a, .about-link-menue2 a {
-    color: gray;
-    margin-bottom: 0.8rem;
+  .active {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    padding: 0 2.5rem;
+  }
+  .content a {
+    margin-bottom: 1rem;
     transition-duration: 0.5s;
+    color: gray;
   }
-  .about-link-menue1 a:hover, .about-link-menue2 a:hover {
+  .content a:hover {
     color: black;
   }
-  .about-link-menue1 h4, .about-link-menue2 h4 {
+  .link-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    color: gray;
+  }
+  .link-sidebar a {
     display: flex;
     align-items: center;
-    cursor: pointer;
-    color: rgb(67, 67, 67);
-    font-size: 1rem;
     margin-bottom: 1rem;
+    transition-duration: 0.5s;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
   }
-  .about-link-menue1 h4 i .about-link-menue2 h4 i {
-    font-size: 1.3rem;
-    margin-left: 0.4rem;
+  .link-sidebar a:hover {
+    color: black;
+    background-color: rgb(205, 205, 205);
+  }
+  .link-sidebar a i {
+    margin-left: 0.7rem;
+    font-size: 1.5rem;
+  }
+  .bi-arrow-down-short {
+    margin: auto;
+    font-size: 1.7rem !important;
   }
   .social {
     color: rgba(0, 0, 0, 0.56);
@@ -876,12 +876,6 @@ img {
   .dropdown-links {
     display: flex;
   }
-  .dropdown-links-one {
-    width: 20%;
-  }
-  .dropdown-links-two {
-    width: 40%;
-  }
   .link-navbar-menu1, .link-navbar-menu2, .link-navbar-menu3, .link-navbar-menu4, .link-navbar-menu5, .link-navbar-menu6, .link-navbar-menu7, .link-navbar-menu8, .link-navbar-menu9, link-navbar-menu10 {
     display: none;
     grid-template-columns: 1fr 1fr;
@@ -905,10 +899,8 @@ img {
   .dropdown-content a {
     color: black;
     padding: 13px 30px 13px;
-    text-decoration: none;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
     justify-content: space-between;
     font-size: 1rem;
     text-align: center;
@@ -924,6 +916,67 @@ img {
   }
   .dis-none {
     display: none;
+  }
+  .content {
+    display: none;
+  }
+  .active {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    padding: 0 2.5rem;
+  }
+  .content a {
+    margin-bottom: 1rem;
+    transition-duration: 0.5s;
+    color: gray;
+  }
+  .content a:hover {
+    color: black;
+  }
+  .link-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    color: gray;
+  }
+  .link-sidebar a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    transition-duration: 0.5s;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .link-sidebar a:hover {
+    color: black;
+    background-color: rgb(205, 205, 205);
+  }
+  .link-sidebar a i {
+    margin-left: 0.7rem;
+    font-size: 1.5rem;
+  }
+  .bi-arrow-down-short {
+    margin: auto;
+    font-size: 1.7rem !important;
+  }
+  .sub-links {
+    display: none;
+    padding: 1rem;
+  }
+  .sub-links div {
+    margin: 1rem 2rem 2rem 1rem;
+  }
+  .sub-links div h4 {
+    margin-bottom: 0.7rem;
+  }
+  .sub-links div h5 {
+    margin-bottom: 0.7rem;
+  }
+  .display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 1120px) {
