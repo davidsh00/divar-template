@@ -1,99 +1,53 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
-    <style>
-.sidebar-desk {
-width: 250px;
-height: 100vh;
-background-color: #333;
-color: #fff;
-position: fixed;
-right: 0;
-padding: 20px;
-box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-}
-
-.sidebar-desk h2 {
-margin: 0;
-padding-bottom: 15px;
-}
-
-.sidebar-desk ul {
-list-style-type: none;
-padding: 0;
-}
-
-.sidebar-desk ul li {
-position: relative;
-}
-
-.sidebar-desk a {
-color: #fff;
-text-decoration: none;
-display: block;
-padding: 10px 15px;
-}
-
-.sidebar-desk a:hover {
-background-color: #575757;
-}
-
-.dropdown-desk {
-display: none;
-padding-left: 15px;
-}
-
-.dropdown-toggles:after {
-content: " ▼";
-}
-
-.dropdown-toggles.active:after {
-content: " ▲";
-}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<style>
+    .nav-item-desks {
+    display: none;
+}
+.nav-item:hover .nav-item-desks {
+    display: block;
+}
+</style>
 <body>
-    <div class="sidebar-desk">
-        <ul>
-            <li>
-                <a href="#" class="dropdown-toggles">املاک</a>
-                <ul class="dropdown-desk">
-                    <li><a href="#">ویلا</a></li>
-                </ul>
-            </li>
-          
-        </ul>
-    </div>
+    <div class="dropdown-content">
+        <div class="nav-items">
+            <ul>
+                <li class="nav-item">
+                    <div class="navItems">
+                        <a href="#" class="nav-items-links">املاک</a>
+                        <div class="nav-item-desks">
+                            <a href="#">به نام خدا</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const navItems = document.querySelectorAll('.navItems');
 
-    <script>
-        document.querySelectorAll('.dropdown-toggles').forEach(item => {
-    item.addEventListener('click', event => {
-        
-        event.preventDefault();
-        
-        
-        document.querySelectorAll('.dropdown-desk').forEach(drop => {
-            if (drop !== item.nextElementSibling) {
-                drop.style.display = 'none';
-                drop.previousElementSibling.classList.remove('active');
-            }
-        });
+    navItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.querySelector('.nav-item-desks').style.display = 'block';
+    });
 
-      
-        const dropdownMenu = item.nextElementSibling;
-        if (dropdownMenu.style.display === 'block') {
-            dropdownMenu.style.display = 'none';
-            item.classList.remove('active');
-        } else {
-            dropdownMenu.style.display = 'block';
-            item.classList.add('active');
-        }
-    });
+    item.addEventListener('mouseleave', () => {
+        item.querySelector('.nav-item-desks').style.display = 'none';
+    });
+
+    item.querySelector('.nav-item-desks').addEventListener('mouseenter', () => {
+        item.querySelector('.nav-item-desks').style.display = 'block';
+    });
+
+    item.querySelector('.nav-item-desks').addEventListener('mouseleave', () => {
+        item.querySelector('.nav-item-desks').style.display = 'none';
+    });
 });
-
-    </script>
+    </script>
 </body>
 </html>

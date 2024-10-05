@@ -72,6 +72,25 @@ function openBoxHandeler2 () {
         });
     });
 
+    const navItems = document.querySelectorAll('.navItems');
+
+    navItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.querySelector('.nav-item-desks').style.display = 'flex';
+    });
+
+    item.addEventListener('mouseleave', () => {
+        item.querySelector('.nav-item-desks').style.display = 'none';
+    });
+
+    item.querySelector('.nav-item-desks').addEventListener('mouseenter', () => {
+        item.querySelector('.nav-item-desks').style.display = 'flex';
+    });
+
+    item.querySelector('.nav-item-desks').addEventListener('mouseleave', () => {
+        item.querySelector('.nav-item-desks').style.display = 'none';
+    });
+});
 btnNav.addEventListener('click', addClasList)
 profileBtn.addEventListener('click', myProfile)
 smMenueBtn.addEventListener('click', HambergerMenue)

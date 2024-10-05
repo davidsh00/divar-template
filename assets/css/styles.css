@@ -897,23 +897,6 @@ img {
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
-  .dropdown-content a {
-    color: gray;
-    padding: 13px 30px 13px;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    text-align: center;
-    transition-duration: 0.5s;
-  }
-  .dropdown-content a:hover {
-    color: black;
-    background-color: rgb(241, 241, 241);
-  }
-  .dropdown-content a i {
-    margin-left: 1rem;
-    color: gray;
-  }
   .dis-block {
     display: block;
   }
@@ -982,6 +965,12 @@ img {
   .display {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .nav-item-desks {
+    display: none;
+  }
+  .nav-item:hover .nav-item-desks {
+    display: block;
   }
 }
 @media screen and (min-width: 1120px) {
