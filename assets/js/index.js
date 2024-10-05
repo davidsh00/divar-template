@@ -46,10 +46,31 @@ function openBoxHandeler1 () {
 function openBoxHandeler2 () {
     boxMenu2.classList.toggle('dis-block')
 }
-function showContent(num) {
-    document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
-    document.getElementById('content' + num).classList.toggle('active');
-}
+// side bar js
+        document.querySelectorAll('.dropdown-toggles').forEach(item => {
+        item.addEventListener('click', event => {
+            
+            event.preventDefault();
+            
+            
+            document.querySelectorAll('.dropdown-desk').forEach(drop => {
+                if (drop !== item.nextElementSibling) {
+                    drop.style.display = 'none';
+                    drop.previousElementSibling.classList.remove('active');
+                }
+            });
+    
+          
+            const dropdownMenu = item.nextElementSibling;
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none';
+                item.classList.remove('active');
+            } else {
+                dropdownMenu.style.display = 'block';
+                item.classList.add('active');
+            }
+        });
+    });
 
 btnNav.addEventListener('click', addClasList)
 profileBtn.addEventListener('click', myProfile)

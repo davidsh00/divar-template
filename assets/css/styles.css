@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 ::after,
 ::before {
@@ -702,7 +703,7 @@ img {
     display: block;
     position: fixed;
     scrollbar-width: 0;
-    top: 85px;
+    top: 110px;
     right: 0;
     background-color: transparent;
     color: white;
@@ -710,49 +711,49 @@ img {
     height: 100%;
     margin-top: 1rem;
   }
-  .content {
+  .sidebar-desk {
+    padding: 0 2rem;
+  }
+  .sidebar-desk ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .sidebar-desk ul li {
+    position: relative;
+    margin-top: 0.2rem;
+  }
+  .sidebar-desk a {
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    transition-duration: 0.5s;
+    font-size: 1.2rem;
+  }
+  .sidebar-desk a span {
+    display: flex;
+  }
+  .sidebar-desk a span i {
+    margin-left: 0.4rem;
+  }
+  .dropdown-toggles:hover {
+    background-color: rgb(233, 233, 233);
+  }
+  .dropdown-desk {
     display: none;
   }
-  .active {
-    display: flex;
-    flex-direction: column;
+  .dropdown-desk li a {
+    margin: 0 2rem;
   }
-  .content {
-    padding: 0 2.5rem;
+  .dropdown-desk li a:hover {
+    background-color: rgb(242, 242, 242);
   }
-  .content a {
-    margin-bottom: 1rem;
-    transition-duration: 0.5s;
-    color: gray;
+  .dropdown-toggles:after {
+    content: " ▼";
   }
-  .content a:hover {
-    color: black;
-  }
-  .link-sidebar {
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    color: gray;
-  }
-  .link-sidebar a {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    transition-duration: 0.5s;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-  }
-  .link-sidebar a:hover {
-    color: black;
-    background-color: rgb(205, 205, 205);
-  }
-  .link-sidebar a i {
-    margin-left: 0.7rem;
-    font-size: 1.5rem;
-  }
-  .bi-arrow-down-short {
-    margin: auto;
-    font-size: 1.7rem !important;
+  .dropdown-toggles.active:after {
+    content: " ▲";
   }
   .social {
     color: rgba(0, 0, 0, 0.56);
@@ -927,7 +928,6 @@ img {
   }
   .active {
     display: flex;
-    flex-direction: column;
   }
   .content {
     padding: 0 2.5rem;

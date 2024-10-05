@@ -192,7 +192,7 @@
         display: block;
         position: fixed;
         scrollbar-width: 0;
-        top: 85px;
+        top: 110px;
         right: 0;
         background-color: transparent;
         color: white;
@@ -201,48 +201,49 @@
         margin-top: 1rem;
     }
     // sidebar
-    .content { display: none; }
-    .active {
-             display: flex;
-             flex-direction: column; 
+    .sidebar-desk {
+        padding: 0 2rem;
+    }   
+    .sidebar-desk ul {
+        list-style-type: none;
+        padding: 0;
     }
-    .content {
-                padding: 0 2.5rem;
-    
+    .sidebar-desk ul li {
+        position: relative;
+        margin-top: 0.2rem;
     }
-    .content a {
-                margin-bottom: 1rem;
-                transition-duration: 0.5s;
-                color: gray;
+    .sidebar-desk a {
+        color: gray;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-radius: $input-border-radius;
+        transition-duration: $transition-duration;
+        font-size: 1.2rem;
     }
-    .content a:hover {
-                color: black;
+    .sidebar-desk a span {
+        display: flex;
     }
-    .link-sidebar {
-                display: flex;
-                flex-direction: column;
-                padding: 1.5rem;
-                color: gray;
+    .sidebar-desk a span i {
+        margin-left: 0.4rem;
     }
-    .link-sidebar a {
-                display: flex;
-                align-items: center;
-                margin-bottom: 1rem;
-                transition-duration: $transition-duration;
-                padding: 0.5rem;
-                border-radius: $input-border-radius;
+    .dropdown-toggles:hover {
+        background-color: rgb(233, 233, 233);
     }
-    .link-sidebar a:hover {
-                color: black;
-                background-color: rgb(205, 205, 205);
+    .dropdown-desk {
+        display: none;
     }
-    .link-sidebar a i {
-                margin-left: 0.7rem;
-                font-size: 1.5rem;
+    .dropdown-desk li a {
+        margin: 0 2rem;
     }
-    .bi-arrow-down-short {
-                margin: auto;
-                font-size: 1.7rem !important;
+    .dropdown-desk li a:hover {
+        background-color: rgb(242, 242, 242);
+    }
+    .dropdown-toggles:after {
+        content: " ▼";
+    }
+    .dropdown-toggles.active:after {
+        content: " ▲";
     }
     // social icon
     .social {
@@ -422,7 +423,6 @@
     .content { display: none; }
     .active {
          display: flex;
-         flex-direction: column; 
     }
     .content {
             padding: 0 2.5rem;
