@@ -1,53 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<div>
+    <div class="nav-items">
+        <div class="nav-item" onmouseover="showDesk(this)" onmouseout="hideDesk(this)">
+            <div class="navItems">
+                <a href="#" class="nav-items-links">املاک</a>
+            </div>
+            <div class="nav-item-desks">
+                <a href="#">به نام خدا</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <style>
-    .nav-item-desks {
+.nav-item-desks {
     display: none;
 }
 .nav-item:hover .nav-item-desks {
     display: block;
 }
 </style>
-<body>
-    <div class="dropdown-content">
-        <div class="nav-items">
-            <ul>
-                <li class="nav-item">
-                    <div class="navItems">
-                        <a href="#" class="nav-items-links">املاک</a>
-                        <div class="nav-item-desks">
-                            <a href="#">به نام خدا</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <script>
-        const navItems = document.querySelectorAll('.navItems');
 
-    navItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        item.querySelector('.nav-item-desks').style.display = 'block';
-    });
+<script>
+function showDesk(element) {
+    element.querySelector('.nav-item-desks').style.display = 'block';
+}
 
-    item.addEventListener('mouseleave', () => {
-        item.querySelector('.nav-item-desks').style.display = 'none';
-    });
-
-    item.querySelector('.nav-item-desks').addEventListener('mouseenter', () => {
-        item.querySelector('.nav-item-desks').style.display = 'block';
-    });
-
-    item.querySelector('.nav-item-desks').addEventListener('mouseleave', () => {
-        item.querySelector('.nav-item-desks').style.display = 'none';
-    });
-});
-    </script>
-</body>
-</html>
+function hideDesk(element) {
+    element.querySelector('.nav-item-desks').style.display = 'none';
+}
+</script>

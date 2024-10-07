@@ -46,6 +46,54 @@
     nav {
         display: none;
     }
+    // navbar category
+    .nav-items-links:hover  .nav-item-desks {
+        display: block;
+    }
+    .nav-item-desks div{
+        margin-right: 1rem;
+        margin-left: 5rem;
+    }
+    .nav-items-links {
+        padding: 0.5rem;
+        padding-right: 1rem;
+        display: flex;
+        align-items: center;
+        transition-duration: $transition-duration;
+        border-radius: $input-border-radius;
+        color: rgb(86, 86, 86);
+    }
+    .nav-items-links i {
+        margin-left: 0.5rem;
+    }
+    .nav-items-links:hover {
+        background-color: rgb(234, 234, 234);
+    }
+    .navItems {
+        display: flex;
+        flex-direction: column;
+        width: 17%;
+        padding: 1rem;
+    }
+    .navItems a {
+        margin-bottom: 1rem;
+    }
+    .nav-item {
+        display: flex;
+    }
+    .navItemscontent {
+        width: 100%;
+        padding: 2rem;
+    }
+    .navItemscontent a div h4 {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    .navItemscontent a div h5 {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    // end navbar category
     ///////////////// sm nav  ///////////////
     .sm-nav {
         display: flex;
